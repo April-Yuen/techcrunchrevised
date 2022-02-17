@@ -1,0 +1,150 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header nav ul li{
+list-style: none;
+}
+
+header{
+  font-family: 'Lato', sans-serif;
+  width: 20%;
+  float: left;
+  font-size: 25px;
+  color: #b3b8bd;
+}
+
+header img{
+  float: left;
+  margin-right: 150px;
+  padding-left: -10px;
+  width: 120px;
+}
+
+header li:first-of-type + li{
+  color:#eda042;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+header li:nth-child(3n){
+  font-size: 18px;
+}
+
+main{
+  width: 50%;
+  float: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+main h1{
+  text-align: left;
+  font-weight: 700;
+  float: left;
+}
+
+main img{
+  width: 80%;
+  height: 70%;
+  float: left;
+}
+
+main img + span{
+  float: left;
+  width: 100%;
+  font-weight: 400;
+}
+
+main p + span{
+  float: left;
+  width: 100%;
+  font-weight: 400;
+}
+
+main p{
+  font-weight: 300;
+  color: #b3b8bd;
+}
+
+main span:first-child {
+  color: #eda509;
+  font-weight: 700;
+}
+
+main span:last-child{
+  font-weight: 700;
+}
+
+.news {
+  width: 30%;
+  float: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+.news h2, span {
+  float: left;
+}
+
+.news span{
+  width: 100%;
+  border-bottom: 1px solid #b3b8bd;
+}
+
+.news span:last-child{
+  border-bottom: 1px solid white;
+}
+
+.wonder{
+  float: right;
+  font-family: 'Poppins', sans-serif;
+  border-top: 1px solid #b3b8bd;
+  border-width: 80%;
+  padding-top: 20px;
+  width: 80%;
+}
+
+.wonder div{
+  float: right;
+  width: 33.33%;
+}
+
+.wonder p{
+  float: right;
+  width: 33.33%;
+}
+
+.wonder img{
+  float: right;
+  width: 33.33%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
